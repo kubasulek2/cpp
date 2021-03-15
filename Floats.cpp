@@ -1,5 +1,6 @@
 #include <iostream>
-#include <float.h>
+/* all numeric functions need it to work */
+#include <cmath>
 
 using std::cout;
 using std::endl;
@@ -7,26 +8,19 @@ using std::endl;
 
 int main()
 {
-	/* 4 bytes */
-	float x = 3.41;
+	pow(2,5);
+	sqrt(4);
 	
-	/* Scientific notation */
-	x = 3.41E4;
+	double a = NAN;
+	double b = INFINITY;
+	double c = -INFINITY;
 
-	/* 8 bytes */
-	double y = 0.165E12;
-	
-	/* 16 bytes */
-	long double z = 0.165E12;
+	cout << a << " " << b << " " << c << " " << endl;
 
-	/* modifier for not using scientific notations */
-	cout << std::fixed << y << endl;
-
-	cout << sizeof(x) << " " << sizeof(y) << " " << sizeof(z) << endl;
-	
-	cout << FLT_DIG << endl;
-	cout << DBL_DIG << endl;
-	cout << LDBL_DIG << endl;
-	
+	/* remainder vs modulo operator */
+	//  10 % 3.25 would throw an error
+	cout << remainder(10, 3.25) << " " <<  fmod(10,3.25) << endl;
+	cout << fmax(1.12,2.34) << " " << fmin(2,4) << endl;
+	cout << ceil(10.15) << " " << floor(1.12) << " " << trunc(-1.12) << endl;
 	return EXIT_SUCCESS;
 }
