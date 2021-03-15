@@ -1,10 +1,9 @@
 #include <iostream>
-/* Only then strings will work */
-#include <string>
+
 
 using std::cout;
 using std::endl;
-using std::string;
+
 
 
 
@@ -30,19 +29,6 @@ int main()
 	// 1 byte
 	cout << "size of char " << sizeof(x) << endl;
 
-	/* Strings */
 	
-	string str = "";
-	
-	/* Old C way of terminating strings */
-	string C_style = "example\0";
-		
-	cout << str << endl;
-
-	cout << "size of str " << sizeof(str) << endl;
-
-
-
-
 	return EXIT_SUCCESS;
 }
