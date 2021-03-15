@@ -1,15 +1,9 @@
 #include <iostream>
-#include <cmath>
+#include <climits>
 
 using std::cout;
 using std::endl;
-using std::pow;
 
-/* Declarations */
-
-// if function is defined bellow main function, must be declared here
-// declare only return and parameter types and name of the function
-double power(double, int);
 
 
 
