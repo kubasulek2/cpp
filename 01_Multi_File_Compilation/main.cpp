@@ -3,7 +3,7 @@
 
 int main()
 {
-	double p = power(4,2);
+	double p = power(4, 2);
 	std::cout << p;
 	return 0;
 }

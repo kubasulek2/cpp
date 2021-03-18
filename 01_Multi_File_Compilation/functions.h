@@ -6,6 +6,7 @@ struct Rectangle
 	double height;
 };
 
+
 double area(double width, double height);
 
 double area(double length);

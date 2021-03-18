@@ -1,5 +1,9 @@
 #include "functions.h"
 
+/**
+ * @param width width of the figure  
+ * @param height height of the figure  
+ */
 double area(double width, double height) { return width * height; };
 
 double area(double length) { return length * length; }
